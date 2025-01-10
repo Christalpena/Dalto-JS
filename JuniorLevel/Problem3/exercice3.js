@@ -14,7 +14,7 @@ function registerStudents(){
     let studentList = []
 
     for(let i= 0; i < totalStudents;i++){
-        let studentName = prompt("Cual es el Nombre del studiante? ")
+        let studentName = prompt("Cual es el Nombre del estudiante? ")
         studentList.push([studentName,0,0])
     }
 
