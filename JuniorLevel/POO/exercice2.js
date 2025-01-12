@@ -78,3 +78,34 @@ class Phone{
 const samsung = new Phone('Samsung',"White","5'",1820,"4K","8G")
 samsung.turnOff()
 samsung.takePhoto()
+
+/**
+ 
+ Cofla no está satisfecho con los celulares así que decide ir a la sección de celulares de alta gama, donde va a poder encontrar los celulares más caros del lugar, así que al entrar vio dos celulares que le encantaron, estos 2 celulares de alta gama pueden hacer todo lo que podían hacer los 3 anteriores pero tienen mejores características y además pueden grabar en cámara super lenta, tiene reconocimiento facial y una cámara extra.
+
+CREAR SOLUCIONES
+
+- Implementar todas estas cualidades en los celulares de alta gama
+
+ */
+
+class AltaGamaPhone extends Phone{
+    constructor(mark,color,weight,screenResolution,cameraResolution,memoryRam){
+        super(mark,color,weight,screenResolution,cameraResolution,memoryRam,secondCameraResolution)
+        this.secondCameraResolution = this.secondCameraResolution
+        document.write(`
+            ${this.secondCameraResolution}<br>
+            `)
+    }
+
+    recordSlowly(){
+        if(this.phoneOn == true){
+            alert("Slow video recorded")
+        }else{
+            alert("The phone is off, you can't record the video")
+        }
+    }
+    facialRecognition(){
+        alert("Facila recognition started")
+    }
+}
