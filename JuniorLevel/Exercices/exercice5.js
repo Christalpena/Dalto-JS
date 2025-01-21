@@ -41,11 +41,10 @@ function inscriptions(){
         ${Object.keys(subjects)}  
         `)
 
-    for(const [key,value] of Object.entries(subjects) ){
+    for(const [key,value] of Object.entries(subjects)){
         if(key == response){
             if(value['students'].length < 19){
                 return(`Te has inscrito en la materia de ${response}`)
-                
             }else{
                 return(`Ya no hay cupos para la materia de ${response}`)
             }
@@ -53,7 +52,6 @@ function inscriptions(){
             return("Esta materia no esta disponible")
         }
     }
-    
 }
 
 document.write(inscriptions())
